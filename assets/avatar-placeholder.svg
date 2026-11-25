@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" fill="none">
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a7350"/>
+      <stop offset="1" stop-color="#3a2f20"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b261c"/>
+      <stop offset="1" stop-color="#0c0a07"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0" stop-color="#a88a55" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="900" fill="url(#glow)"/>
+  <path d="M60 900c10-190 120-290 340-300s330 110 340 300z" fill="url(#suit)"/>
+  <path d="M330 610l70 120 70-120-30-70h-80z" fill="#14100b"/>
+  <rect x="352" y="470" width="96" height="120" rx="40" fill="url(#skin)"/>
+  <ellipse cx="400" cy="340" rx="120" ry="150" fill="url(#skin)"/>
+  <path d="M280 320c-10-120 60-190 130-190s130 60 110 190c-20-60-60-90-120-90s-100 30-120 90z" fill="#120d08"/>
+  <path d="M310 400c10 80 40 110 90 110s80-30 90-110c-20 50-50 70-90 70s-70-20-90-70z" fill="#1a130c" opacity=".85"/>
+  <text x="400" y="840" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="26" fill="#a88a55" opacity=".7">Upload your photo in the admin panel</text>
+</svg>

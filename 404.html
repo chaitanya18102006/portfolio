@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>404 — Page not found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600&family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#000;--text:#fff;--muted:#a3a3a3;--red:#ff1414;--orange:#ff7a00}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;text-align:center;background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',system-ui,sans-serif;overflow:hidden}
+    .bg{position:fixed;inset:0;pointer-events:none;background:
+      radial-gradient(500px circle at 50% 40%,rgba(255,20,20,.28),transparent 70%),
+      repeating-linear-gradient(60deg,transparent 0 38px,rgba(255,20,20,.12) 38px 39px),
+      repeating-linear-gradient(-60deg,transparent 0 38px,rgba(255,20,20,.12) 38px 39px);
+      -webkit-mask-image:radial-gradient(circle at 50% 45%,#000,transparent 75%);mask-image:radial-gradient(circle at 50% 45%,#000,transparent 75%)}
+    main{position:relative;animation:in .9s cubic-bezier(.2,.75,.2,1)}
+    h1{margin:0;font:200 clamp(110px,26vw,230px)/1 Poppins,sans-serif;letter-spacing:-.04em;background:linear-gradient(180deg,var(--text),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent;animation:float 5s ease-in-out infinite}
+    h2{margin:6px 0 10px;font:600 clamp(20px,3vw,28px) Poppins,sans-serif}
+    p{margin:0 auto 28px;max-width:420px;color:var(--muted);font-weight:500;font-size:14px}
+    a{display:inline-flex;align-items:center;gap:10px;padding:13px 28px;border-radius:10px;background:var(--red);color:#fff;text-decoration:none;font:500 14px Poppins,sans-serif;transition:transform .3s cubic-bezier(.2,.75,.2,1),box-shadow .3s}
+    a:hover{transform:translateY(-4px);box-shadow:0 14px 34px -8px var(--red)}
+    a:active{transform:scale(.95)}
+    a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+    @keyframes in{from{opacity:0;transform:translateY(30px)}}
+    @keyframes float{50%{transform:translateY(-10px)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <main>
+    <h1>404</h1>
+    <h2>This page took a wrong turn</h2>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/">← Back to home</a>
+  </main>
+</body>
+</html>
